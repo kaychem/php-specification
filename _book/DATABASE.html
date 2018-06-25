@@ -1,0 +1,760 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>数据库操作 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="API_AUTOMATION.html" />
+    
+    
+    <link rel="prev" href="ROUTE.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    文档介绍
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.1" data-path="BASE.html">
+            
+                <a href="BASE.html">
+            
+                    
+                    文档编写规范
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.2" data-path="BASE.html">
+            
+                <a href="BASE.html">
+            
+                    
+                    项目架构
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="BASE.html">
+            
+                <a href="BASE.html">
+            
+                    
+                    开发规范
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="BASE.html">
+            
+                <a href="BASE.html">
+            
+                    
+                    目录结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="DENOMINATE.html">
+            
+                <a href="DENOMINATE.html">
+            
+                    
+                    编码指南
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="BASE.html">
+            
+                <a href="BASE.html">
+            
+                    
+                    注释规约
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="BASE.html">
+            
+                <a href="BASE.html">
+            
+                    
+                    仓库模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="STATUSCODE.html">
+            
+                <a href="STATUSCODE.html">
+            
+                    
+                    状态码
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="REQUEST.html">
+            
+                <a href="REQUEST.html">
+            
+                    
+                    验证器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="ROUTE.html">
+            
+                <a href="ROUTE.html">
+            
+                    
+                    路由注册
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.8" data-path="DATABASE.html">
+            
+                <a href="DATABASE.html">
+            
+                    
+                    数据库操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.9" data-path="API_AUTOMATION.html">
+            
+                <a href="API_AUTOMATION.html">
+            
+                    
+                    API文档编写
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.10" data-path="BASE.html">
+            
+                <a href="BASE.html">
+            
+                    
+                    Git分支管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.11" data-path="BASE.html">
+            
+                <a href="BASE.html">
+            
+                    
+                    调试
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="BASE.html">
+            
+                <a href="BASE.html">
+            
+                    
+                    mysql规范
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="BASE.html">
+            
+                <a href="BASE.html">
+            
+                    
+                    发布规范
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="COMPOSER/BASE.html">
+            
+                <a href="COMPOSER/BASE.html">
+            
+                    
+                    扩展包指南
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="COMPOSER/LIST.html">
+            
+                <a href="COMPOSER/LIST.html">
+            
+                    
+                    包列表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="COMPOSER/SCOUT.html">
+            
+                <a href="COMPOSER/SCOUT.html">
+            
+                    
+                    scout
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="BASE.html">
+            
+                <a href="BASE.html">
+            
+                    
+                    小伙伴加入指南
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="BASE.html">
+            
+                <a href="BASE.html">
+            
+                    
+                    开发环境
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="BASE.html">
+            
+                <a href="BASE.html">
+            
+                    
+                    开发工具集
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >数据库操作</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h3 id="&#x6570;&#x636E;&#x5E93;&#x64CD;&#x4F5C;">&#x6570;&#x636E;&#x5E93;&#x64CD;&#x4F5C;</h3>
+<h4 id="&#x82B1;&#x62F3;&#x7EE3;&#x817F;&#x4E4B;db&#x53CA;&#x6784;&#x9020;&#x5668;">&#x82B1;&#x62F3;&#x7EE3;&#x817F;&#x4E4B;DB&#x53CA;&#x6784;&#x9020;&#x5668;</h4>
+<p>&#x6570;&#x636E;&#x5E93;&#x67E5;&#x8BE2;&#x6784;&#x5EFA;&#x5668;&#x63D0;&#x4F9B;&#x4E86;&#x4E00;&#x4E2A;&#x65B9;&#x4FBF;&#x7684;&#x6D41;&#x63A5;&#x53E3;&#x7528;&#x4E8E;&#x521B;&#x5EFA;&#x548C;&#x6267;&#x884C;&#x6570;&#x636E;&#x5E93;&#x67E5;&#x8BE2;&#x3002;&#x67E5;&#x8BE2;&#x6784;&#x5EFA;&#x5668;&#x53EF;&#x4EE5;&#x7528;&#x4E8E;&#x6267;&#x884C;&#x5E94;&#x7528;&#x4E2D;&#x7EDD;&#x5927;&#x90E8;&#x5206;&#x6570;&#x636E;&#x5E93;&#x64CD;&#x4F5C;&#xFF0C;&#x5E76;&#x4E14;&#x80FD;&#x591F;&#x5728; Laravel &#x652F;&#x6301;&#x7684;&#x6240;&#x6709;&#x6570;&#x636E;&#x5E93;&#x7CFB;&#x7EDF;&#x4E0A;&#x5DE5;&#x4F5C;&#x3002;</p>
+<p>&#x6D41;&#x63A5;&#x53E3;&#x662F;&#x4E00;&#x79CD;&#x8BBE;&#x8BA1;&#x6A21;&#x5F0F;&#xFF0C;&#x66F4;&#x591A;&#x5173;&#x4E8E;&#x6D41;&#x63A5;&#x53E3;&#x6A21;&#x5F0F;&#x7684;&#x8BBE;&#x8BA1;&#x548C;&#x4F7F;&#x7528;&#x65B9;&#x5F0F;&#xFF0C;&#x53EF;&#x67E5;&#x770B;&#x8FD9;&#x7BC7;&#x6559;&#x7A0B;&#xFF1A;<a href="http://laravelacademy.org/post/2828.html" target="_blank">PHP &#x8BBE;&#x8BA1;&#x6A21;&#x5F0F;&#x7CFB;&#x5217; &#x2014;&#x2014; &#x6D41;&#x63A5;&#x53E3;&#x6A21;&#x5F0F;</a>&#x3002;</p>
+<p>&#x5728;Lavarel&#x6784;&#x9020;&#x5668;&#x4E2D;&#x547D;&#x540D;&#x4E0E;&#x539F;&#x751F;sql&#x76F8;&#x5DEE;&#x65E0;&#x51E0;&#xFF0C;&#x51E0;&#x4E4E;&#x5728;sql&#x4E2D;&#x6240;&#x80FD;&#x51FA;&#x73B0;&#x7684;&#x5173;&#x952E;&#x8BCD;&#x5728;&#x6784;&#x9020;&#x5668;&#x90FD;&#x6709;&#x5BF9;&#x5E94;&#x7684;&#x65B9;&#x6CD5;&#xFF0C;&#x800C;&#x4E14;&#x547D;&#x540D;&#x9AD8;&#x5EA6;&#x4E00;&#x81F4;&#x3002;&#x4E0B;&#x9762;&#x5217;&#x51FA;&#x5E38;&#x89C1;&#x7684;&#x6784;&#x9020;&#x8BED;&#x53E5;&#xFF0C;&#x51E0;&#x4E4E;&#x4ECE;&#x5173;&#x952E;&#x8BCD;&#x4E2D;&#x5C31;&#x80FD;&#x770B;&#x51FA;&#x76F8;&#x5173;&#x542B;&#x4E49;&#xFF0C;&#x5E76;&#x4E0D;&#x9700;&#x8981;&#x8FC7;&#x591A;&#x7684;&#x89E3;&#x91CA;&#x3002;</p>
+<p>&#x4E0B;&#x9762;&#x90FD;&#x9700;&#x7528;&#x5230;&#x7684;DB&#x95E8;&#x9762;<code>Illuminate\Support\Facades\DB</code></p>
+<pre><code class="lang-php"><span class="hljs-comment">//&#x67E5;&#x8BE2;&#x5355;&#x6761;</span>
+$company = DB::table(<span class="hljs-string">&apos;company&apos;</span>)-&gt;where(<span class="hljs-string">&apos;name&apos;</span>, <span class="hljs-string">&apos;lxtx&apos;</span>)-&gt;first();
+<span class="hljs-comment">//&#x591A;&#x6761; orderBy skip</span>
+... -&gt;limit(<span class="hljs-number">1</span>)-&gt;orderBy(<span class="hljs-string">&apos;created_at&apos;</span>,<span class="hljs-string">&apos;asc&apos;</span>)-&gt;skip(<span class="hljs-number">2</span>)-&gt;get();
+<span class="hljs-comment">//where</span>
+... -&gt;where(<span class="hljs-string">&apos;votes&apos;</span>, <span class="hljs-string">&apos;&gt;&apos;</span>, <span class="hljs-number">100</span>)-&gt;orWhere(<span class="hljs-string">&apos;name&apos;</span>, <span class="hljs-string">&apos;John&apos;</span>);...
+... -&gt;where(<span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span></span>{
+$query-&gt;where(<span class="hljs-string">&apos;votes&apos;</span>, <span class="hljs-string">&apos;&gt;&apos;</span>, <span class="hljs-number">100</span>);
+$query-&gt;orWhere(<span class="hljs-string">&apos;name&apos;</span>, <span class="hljs-string">&apos;John&apos;</span>);
+
+... -&gt;whereIn(<span class="hljs-string">&apos;id&apos;</span>,[<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,<span class="hljs-number">3</span>]); ...
+... -&gt;whereNotIn(<span class="hljs-string">&apos;id&apos;</span>,[<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,<span class="hljs-number">3</span>]); ...
+... -&gt;whereNull(<span class="hljs-string">&apos;name&apos;</span>); ...
+... -&gt;whereNotNull(<span class="hljs-string">&apos;name&apos;</span>); ...
+
+... -&gt;whereExists(<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">($query)</span> </span>{
+            $query-&gt;select(DB::raw(<span class="hljs-number">1</span>))
+                  -&gt;from(<span class="hljs-string">&apos;orders&apos;</span>)
+                  -&gt;whereRaw(<span class="hljs-string">&apos;orders.user_id = users.id&apos;</span>);
+        }); ...
+
+<span class="hljs-comment">//groupBy having</span>
+... -&gt;groupBy(<span class="hljs-string">&apos;rid&apos;</span>)-&gt;having(<span class="hljs-string">&apos;max(id)&apos;</span>); ...
+
+<span class="hljs-comment">//&#x805A;&#x5408;&#x51FD;&#x6570;</span>
+... -&gt;max(<span class="hljs-string">&apos;price&apos;</span>);
+<span class="hljs-comment">//&#x8BB0;&#x5F55;&#x662F;&#x5426;&#x5B58;&#x5728;</span>
+... -&gt;exists();  ... -&gt;doesntExist();
+<span class="hljs-comment">//&#x53BB;&#x91CD;</span>
+... -&gt;distinct();
+</code></pre>
+<pre><code class="lang-php"><span class="hljs-comment">// join</span>
+... -&gt;join(<span class="hljs-string">&apos;contacts&apos;</span>, <span class="hljs-string">&apos;users.id&apos;</span>, <span class="hljs-string">&apos;=&apos;</span>, <span class="hljs-string">&apos;contacts.user_id&apos;</span>) ...
+
+... -&gt;join(<span class="hljs-string">&apos;contacts&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">($join)</span> </span>{
+        $join-&gt;on(<span class="hljs-string">&apos;users.id&apos;</span>, <span class="hljs-string">&apos;=&apos;</span>, <span class="hljs-string">&apos;contacts.user_id&apos;</span>)
+             -&gt;where(<span class="hljs-string">&apos;contacts.user_id&apos;</span>, <span class="hljs-string">&apos;&gt;&apos;</span>, <span class="hljs-number">5</span>);
+    }) ...
+
+... -&gt;leftJoin(<span class="hljs-string">&apos;contacts&apos;</span>, <span class="hljs-string">&apos;users.id&apos;</span>, <span class="hljs-string">&apos;=&apos;</span>, <span class="hljs-string">&apos;contacts.user_id&apos;</span>) ...
+</code></pre>
+<pre><code class="lang-php"><span class="hljs-comment">//&#x67E5;&#x8BE2;&#x5B57;&#x6BB5;&#x589E;&#x52A0;  </span>
+$query = DB::table(<span class="hljs-string">&apos;users&apos;</span>)-&gt;select(<span class="hljs-string">&apos;name&apos;</span>);
+$users = $query-&gt;addSelect(<span class="hljs-string">&apos;age&apos;</span>)-&gt;get();
+
+<span class="hljs-comment">//&#x6761;&#x4EF6;&#x8BED;&#x53E5;when&#x95ED;&#x5305;&#x7684;&#x4F7F;&#x7528; &#xFF08;if lese&#x7684;&#x53E6;&#x4E00;&#x79CD;&#x4F53;&#x73B0;&#xFF09;</span>
+... -&gt;when($sortBy, <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">($query)</span> <span class="hljs-title">use</span> <span class="hljs-params">($sortBy)</span> </span>{
+                        <span class="hljs-keyword">return</span> $query-&gt;orderBy($sortBy);
+                    }, <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">($query)</span> </span>{
+                        <span class="hljs-keyword">return</span> $query-&gt;orderBy(<span class="hljs-string">&apos;name&apos;</span>);
+                    }); ...
+</code></pre>
+<pre><code class="lang-php"><span class="hljs-comment">//&#x4FEE;&#x6539;&#x5220;&#x9664;&#x63D2;&#x5165;</span>
+... -&gt;where(<span class="hljs-string">&apos;id&apos;</span>,<span class="hljs-number">1</span>)-&gt;update([<span class="hljs-string">&apos;name&apos;</span> =&gt; <span class="hljs-string">&apos;polaris&apos;</span>,<span class="hljs-string">&apos;role_id&apos;</span> =&gt; <span class="hljs-number">2</span>])  ...
+... -&gt;where(<span class="hljs-string">&apos;id&apos;</span>,<span class="hljs-number">1</span>)-&gt;delete(); ...
+... -&gt;insert([[<span class="hljs-string">&apos;name&apos;</span> =&gt; <span class="hljs-string">&apos;kay&apos;</span>],[<span class="hljs-string">&apos;name&apos;</span>=&gt;<span class="hljs-string">&apos;polaris]]); ...
+</span></code></pre>
+<pre><code class="lang-php"><span class="hljs-comment">//&#x4E8B;&#x52A1;&#x95ED;&#x5305; &#x81EA;&#x52A8;&#x56DE;&#x6EDA;</span>
+DB::transaction(<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">()</span> </span>{
+    <span class="hljs-comment">// ...</span>
+});
+
+<span class="hljs-comment">//&#x624B;&#x52A8;&#x4F7F;&#x7528;&#x4E8B;&#x52A1;</span>
+DB::beginTransaction();
+<span class="hljs-comment">//&#x56DE;&#x6EDA;</span>
+DB::rollBack();
+<span class="hljs-comment">//&#x63D0;&#x4EA4;</span>
+DB::commit();
+</code></pre>
+<pre><code class="lang-php"><span class="hljs-comment">//&#x83B7;&#x53D6;&#x76D1;&#x542C;&#x5E94;&#x7528;&#x4E2D;&#x6BCF;&#x6B21; SQL &#x8BED;&#x53E5;&#x7684;&#x6267;&#x884C;</span>
+DB::listen(<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">($query)</span> </span>{
+            <span class="hljs-comment">// $query-&gt;sql</span>
+            <span class="hljs-comment">// $query-&gt;bindings</span>
+            <span class="hljs-comment">// $query-&gt;time</span>
+});
+</code></pre>
+<pre><code class="lang-php"><span class="hljs-comment">//&#x6267;&#x884C;&#x539F;&#x751F;sql &#x7B2C;&#x4E8C;&#x4E2A;&#x53C2;&#x6570;&#x4E3A;&#x6570;&#x636E;&#x7684;&#x4F20;&#x5165;</span>
+$results = DB::select(<span class="hljs-string">&apos;select * from users where id = :id&apos;</span>, [<span class="hljs-string">&apos;id&apos;</span> =&gt; <span class="hljs-number">1</span>]);
+DB::insert(<span class="hljs-string">&apos;insert into users (id, name) values (?, ?)&apos;</span>, [<span class="hljs-number">1</span>, <span class="hljs-string">&apos;lxtx&apos;</span>]);
+$affected = DB::update(<span class="hljs-string">&apos;update users set votes = 100 where name = ?&apos;</span>, [<span class="hljs-string">&apos;lxtx&apos;</span>]);
+$deleted = DB::delete(<span class="hljs-string">&apos;delete from users&apos;</span>);
+</code></pre>
+<pre><code class="lang-php"><span class="hljs-comment">//&#x6267;&#x884C;&#x8868;&#x7EA7;&#x522B;&#x7684;&#x8BED;&#x53E5; &#x5982;&#x4FEE;&#x6539;&#x5220;&#x9664;&#x8868;(&#x5B57;&#x6BB5;)</span>
+DB::statement(<span class="hljs-string">&apos;drop table users&apos;</span>);
+</code></pre>
+<p>&#x66F4;&#x591A;&#x7528;&#x6CD5;&#x53CA;&#x8BE6;&#x7EC6;&#x4ECB;&#x7ECD; 
+<a href="http://laravelacademy.org/post/8834.html" target="_blank">&#x6570;&#x636E;&#x5E93;&#x64CD;&#x4F5C; &#x2014;&#x2014; &#x67E5;&#x8BE2;&#x6784;&#x5EFA;&#x5668;</a></p>
+<h4 id="&#x5185;&#x529F;&#x5FC3;&#x6CD5;&#x4E4B;orm">&#x5185;&#x529F;&#x5FC3;&#x6CD5;&#x4E4B;ORM</h4>
+<p>&#x770B;&#x4E86;&#x4E0A;&#x8BC9;Lavarel&#x67E5;&#x8BE2;&#x6784;&#x9020;&#x5668;&#x7684;&#x65B9;&#x6CD5;&#x540E;&#xFF0C;&#x7531;&#x8877;&#x611F;&#x53F9;&#xFF0C;&#x53EA;&#x80FD;&#x7528;&#x591A;&#x548C;&#x5F3A;&#x5927;&#x6765;&#x5F62;&#x540C;&#xFF0C;&#x56E0;&#x4E3A;&#x4F60;&#x4E0D;&#x518D;&#x9700;&#x8981;&#x5199;&#x957F;&#x800C;&#x70E6;&#x4EBA;&#x7684;sql,&#x4E5F;&#x4E0D;&#x9700;&#x8981;&#x53BB;&#x505A;&#x5404;&#x79CD;&#x5224;&#x65AD;&#x4E0E;&#x5B57;&#x7B26;&#x4E32;&#x62FC;&#x63A5;&#x3002;</p>
+<p>&#x5982;&#x679C;&#x628A;&#x6570;&#x636E;&#x64CD;&#x4F5C;&#x5F53;&#x505A;&#x4E5D;&#x9633;&#x795E;&#x529F;&#x7684;&#x8BDD;&#xFF0C;&#x90A3;&#x4E48;&#x4E0A;&#x8BC9;&#x6784;&#x9020;&#x5668;&#x5C31;&#x662F;&#x57FA;&#x672C;&#x7684;&#x7AD9;&#x6869;&#xFF0C;&#x4FEF;&#x5367;&#x6491;&#x53CA;&#x57FA;&#x672C;&#x7684;&#x82B1;&#x5F0F;&#x7684;&#x5BF9;&#x6253;&#x4E86;&#xFF0C;&#x4E0E;&#x666E;&#x901A;&#x4EBA;&#x5BF9;&#x6218;&#x80FD;&#x8F7B;&#x6613;&#x53D6;&#x80DC;&#xFF0C;&#x90A3;&#x4E48;&#x5982;&#x679C;&#x60F3;&#x8981;&#x5B66;&#x5230;&#x4E5D;&#x9633;&#x795E;&#x529F;&#x4E94;&#x91CD;&#x4EE5;&#x4E0A;&#xFF0C;&#x60F3;&#x8981;&#x4E0A;&#x5929;&#x5165;&#x5730;&#x9694;&#x7A7A;&#x53D6;&#x7269;&#x7684;&#x8BDD;&#xFF0C;&#x5C31;&#x8981;&#x7528;&#x5230;&#x4ECA;&#x5929;&#x7684;&#x4E3B;&#x89D2;Eloquent ORM&#x4E86;&#x3002;</p>
+<p>&#x901A;&#x5E38;&#x6BCF;&#x5F20;&#x6570;&#x636E;&#x8868;&#x90FD;&#x9700;&#x5BF9;&#x5E94;&#x4E00;&#x4E2A;&#x4E0E;&#x8BE5;&#x8868;&#x8FDB;&#x884C;&#x4EA4;&#x4E92;&#x7684;&#x6A21;&#x578B;&#xFF08;Model&#xFF09;&#xFF0C;&#x901A;&#x8FC7;&#x6A21;&#x578B;&#x7C7B;&#xFF0C;&#x53EF;&#x4EE5;&#x5BF9;&#x6570;&#x636E;&#x8868;&#x8FDB;&#x884C;&#x67E5;&#x8BE2;&#x3001;&#x63D2;&#x5165;&#x3001;&#x66F4;&#x65B0;&#x3001;&#x5220;&#x9664;&#x7B49;&#x64CD;&#x4F5C;&#x3002;&#x8FD9;&#x5C31;&#x662F;&#x4E0A;&#x8BC9;&#x666E;&#x901A;&#x6784;&#x9020;&#x5668;&#x62DB;&#x5F0F;&#xFF0C;&#x6709;&#x4E86;&#x8FD9;&#x4E9B;&#x57FA;&#x672C;&#x529F;&#xFF0C;&#x6211;&#x5C31;&#x53EF;&#x4EE5;&#x5F80;&#x4E0B;&#x770B;&#x3002;</p>
+<p><strong>&#x534E;&#x800C;&#x4E0D;&#x5B9E;&#x4E4B;&#x62DB;&#x5F0F;&#x4E00;  save&#x7684;&#x5C34;&#x5C2C;</strong></p>
+<pre><code class="lang-php">    <span class="hljs-comment">/**
+     * &#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x822A;&#x73ED;&#x5B9E;&#x4F8B;
+     *
+     * <span class="hljs-doctag">@param</span>  Request  $request
+     * <span class="hljs-doctag">@return</span> Response
+     */</span>
+    <span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">store</span><span class="hljs-params">(Request $request)</span>
+    </span>{
+        <span class="hljs-comment">// &#x9A8C;&#x8BC1;&#x8BF7;&#x6C42;...</span>
+
+        $flight = <span class="hljs-keyword">new</span> Flight;
+        <span class="hljs-comment">//$flight = Flight::find($request-&gt;id);</span>
+
+        $flight-&gt;name = $request-&gt;name;
+
+        $flight-&gt;save();
+    }
+</code></pre>
+<p>&#x4E0A;&#x8BC9;&#x4F8B;&#x5B50;&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x53EA;&#x662F;&#x7B80;&#x5355;&#x5206;&#x914D; HTTP &#x8BF7;&#x6C42;&#x4E2D;&#x7684; <code>name</code> &#x53C2;&#x6570;&#x503C;&#x7ED9; <code>App\Flight</code> &#x6A21;&#x578B;&#x5B9E;&#x4F8B;&#x7684; <code>name</code> &#x5C5E;&#x6027;&#xFF0C;&#x5F53;&#x6211;&#x4EEC;&#x8C03;&#x7528; <code>save</code> &#x65B9;&#x6CD5;&#x65F6;&#xFF0C;&#x4E00;&#x6761;&#x8BB0;&#x5F55;&#x5C06;&#x4F1A;&#x88AB;&#x63D2;&#x5165;&#x6570;&#x636E;&#x5E93;&#x3002;&#x4ECE;&#x800C;&#x4F7F;&#x6570;&#x636E;&#x6301;&#x4E45;&#x5316;&#x5165;&#x5E93;&#x3002;</p>
+<p>&#x800C;<code>created_at</code> &#x548C; <code>updated_at</code> &#x65F6;&#x95F4;&#x6233;&#x5728; <code>save</code> &#x65B9;&#x6CD5;&#x88AB;&#x8C03;&#x7528;&#x65F6;&#x4F1A;&#x81EA;&#x52A8;&#x88AB;&#x8BBE;&#x7F6E;&#xFF0C;&#x6240;&#x4EE5;&#x6CA1;&#x5FC5;&#x8981;&#x624B;&#x52A8;&#x8BBE;&#x7F6E;&#x5B83;&#x4EEC;&#x3002;</p>
+<p>&#x8FD9;&#x6837;&#x770B;&#x6765;&#xFF0C;&#x5B83;&#x7684;&apos;&#x5F0A;&#x7AEF;&apos;&#x5C31;&#x76F4;&#x63A5;&#x7ED9;&#x4F53;&#x73B0;&#x51FA;&#x6765;&#xFF1A;&#x5F53;&#x6570;&#x636E;&#x8868;&#x9700;&#x8981;&#x5927;&#x91CF;&#x5B57;&#x6BB5;&#xFF08;&#x5C5E;&#x6027;&#xFF09;&#x8D4B;&#x503C;&#x5E76;&#x968F;&#x5E26;&#x7684;&#x5404;&#x79CD;&#x5224;&#x65AD;&#xFF0C;&#x8FD9;&#x79CD;&#x5199;&#x6CD5;&#x5C31;&#x53D8;&#x7684;&#x4E0D;&#x90A3;&#x4E48;&#x4F18;&#x96C5;&#x4E86;&#xFF0C;&#x7F3A;&#x4EE3;&#x4E4B;&#x7684;&#x4FBF;&#x662F;<code>create</code> &#x6216;&#x662F;<code>insert</code>&#x65B9;&#x6CD5;&#x7684;&#x6570;&#x7EC4;&#x64CD;&#x4F5C;&#x66F4;&#x4E3A;&#x4F18;&#x96C5;&#x4E9B;&#x3002;</p>
+<pre><code class="lang-php">    <span class="hljs-comment">/**
+     * &#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x822A;&#x73ED;&#x5B9E;&#x4F8B;
+     *
+     * <span class="hljs-doctag">@param</span>  Request  $request
+     * <span class="hljs-doctag">@return</span> Response
+     */</span>
+    <span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">store</span><span class="hljs-params">(Request $request)</span>
+    </span>{
+        <span class="hljs-comment">// &#x9A8C;&#x8BC1;&#x8BF7;&#x6C42;...</span>
+
+        $flight = <span class="hljs-keyword">new</span> Flight;
+
+        $flight-&gt;name = $request-&gt;name;
+        $flight-&gt;hid = $request-&gt;hid;
+        $flight-&gt;distance = $request-&gt;distance;
+        $flight-&gt;price = $request-&gt;price;
+
+        <span class="hljs-keyword">if</span>(<span class="hljs-keyword">false</span>) {
+            $flight-&gt;pid = $request-&gt;pid;
+        }
+        <span class="hljs-comment">// ......</span>
+
+        $flight-&gt;save();
+    }
+</code></pre>
+<pre><code class="lang-php">    <span class="hljs-comment">/**
+     * &#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x822A;&#x73ED;&#x5B9E;&#x4F8B;
+     *
+     * <span class="hljs-doctag">@param</span>  Request  $request
+     * <span class="hljs-doctag">@return</span> Response
+     */</span>
+    <span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">store</span><span class="hljs-params">(Request $request)</span>
+    </span>{
+        <span class="hljs-comment">// &#x9A8C;&#x8BC1;&#x8BF7;&#x6C42;...</span>
+
+        $flight = $request-&gt;only(<span class="hljs-string">&apos;a&apos;</span>,<span class="hljs-string">&apos;b&apos;</span>);
+        <span class="hljs-comment">//$flight = [];</span>
+        <span class="hljs-comment">//....</span>
+
+        Flight::create($flight);
+        <span class="hljs-comment">//Flight::insert($flight);</span>
+    }
+</code></pre>
+<p>&#x4F46;&#x5B83;&#x4E0D;&#x662F;&#x6CA1;&#x6709;&#x5E94;&#x7528;&#x573A;&#x666F;&#xFF0C;&#x6BD4;&#x5982;&#x5728;&#x5C0F;&#x578B;&#x9879;&#x76EE;&#x4E2D;&#x7684;&#x67E5;&#x8BE2;&#x9644;&#x5E26;&#x66F4;&#x65B0;&#x7684;&#x64CD;&#x4F5C;&#x3002;</p>
+<pre><code class="lang-php">    <span class="hljs-comment">/**
+     * &#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x822A;&#x73ED;&#x5B9E;&#x4F8B;
+     *
+     * <span class="hljs-doctag">@param</span>  Request  $request
+     * <span class="hljs-doctag">@return</span> Response
+     */</span>
+    <span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">store</span><span class="hljs-params">(Request $request)</span>
+    </span>{
+        <span class="hljs-comment">// &#x9A8C;&#x8BC1;&#x8BF7;&#x6C42;...</span>
+
+        $flight = Flight::find($request-&gt;id);
+
+        <span class="hljs-comment">//&#x53D6;hid&#x505A;&#x98DE;&#x884C;&#x4EFB;&#x52A1;</span>
+        $this-&gt;flyman($flight-&gt;hid);
+
+        $flight-&gt;name = $request-&gt;name;
+
+        $flight-&gt;save();
+    }
+</code></pre>
+<p><strong>&#x9694;&#x7A7A;&#x53D6;&#x7269;&#x4E4B;&#x62DB;&#x5F0F;&#x4E8C;  with&#x7684;&#x5F3A;&#x5927;</strong></p>
+<p>&#x603B;&#x800C;&#x8A00;&#x4E4B;&#xFF0C;&#x5173;&#x7CFB;&#x578B;&#x6570;&#x636E;&#x5E93;&#x6700;&#x64C5;&#x957F;&#x7684;&#x5C31;&#x662F;&#x5904;&#x7406;&#x5404;&#x79CD;&#x8868;&#xFF0C;&#x5B57;&#x6BB5;&#x7684;&#x5173;&#x8054;&#x5173;&#x7CFB;&#x4E86;&#xFF0C;&#x8FD9;&#x4E9B;&#x5C06;&#x4F1A;&#x5728;Model&#x4E2D;&#x4F53;&#x73B0;&#x3002;</p>
+<p>&#x6700;&#x7B80;&#x5355;&#x7684;&#x4E00;&#x5BF9;&#x4E00;&#x5BF9;&#x5E94;&#x5173;&#x7CFB;</p>
+<pre><code class="lang-php"><span class="hljs-keyword">namespace</span> <span class="hljs-title">App</span>;
+
+<span class="hljs-keyword">use</span> <span class="hljs-title">Illuminate</span>\<span class="hljs-title">Database</span>\<span class="hljs-title">Eloquent</span>\<span class="hljs-title">Model</span>;
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">User</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Model</span></span>{
+    <span class="hljs-comment">/**
+     * &#x83B7;&#x53D6;&#x5173;&#x8054;&#x5230;&#x7528;&#x6237;&#x7684;&#x624B;&#x673A;
+     */</span>
+    <span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">phone</span><span class="hljs-params">()</span>
+    </span>{
+        <span class="hljs-keyword">return</span> $this-&gt;belongsTo(<span class="hljs-string">&apos;App\Phone&apos;</span>,<span class="hljs-string">&apos;id&apos;</span>,<span class="hljs-string">&apos;phone_id&apos;</span>);
+    }
+}
+</code></pre>
+<p>&#x6784;&#x9020;&#x5668;&#x4E2D;&#x7684;&#x4F53;&#x73B0; &#x7ED3;&#x679C;&#x96C6;&#x4E2D;&#x7684;<code>Phone</code>&#x6570;&#x636E;&#x5C06;&#x4F1A;&#x4EE5;<code>phone</code>&#x5BF9;&#x8C61;&#x7684;&#x65B9;&#x5F0F;&#x4F53;&#x73B0;</p>
+<pre><code class="lang-php">    <span class="hljs-comment">/**
+     * &#x67E5;&#x8BE2;&#x7528;&#x6237;&#x7684;&#x624B;&#x673A;
+     *
+     * <span class="hljs-doctag">@return</span> Response
+     */</span>
+    <span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">index</span><span class="hljs-params">()</span>
+    </span>{
+       $users =  \App\User::with(<span class="hljs-string">&apos;phone&apos;</span>)-&gt;get();
+    }
+</code></pre>
+<p>&#x9664;&#x6B64;&#x4E4B;&#x5916;&#xFF0C;&#x8FD8;&#x6709;&#x4E00;&#x5BF9;&#x591A;&#xFF0C;&#x591A;&#x5BF9;&#x591A;&#xFF0C;&#x8FDC;&#x5C42;&#x4E00;&#x5BF9;&#x591A;&#xFF0C;&#x591A;&#x6001;&#x5173;&#x8054;&#xFF0C;&#x591A;&#x5BF9;&#x591A;&#x7684;&#x591A;&#x6001;&#x5173;&#x8054;&#x3002; &#x8BE6;&#x7EC6;&#x7528;&#x6CD5;&#x8BE6;&#x89C1;<a href="http://laravelacademy.org/post/8867.html" target="_blank">Eloquent ORM &#x2014;&#x2014; &#x5173;&#x8054;&#x5173;&#x7CFB;</a></p>
+<p><strong>&#x6700;&#x5F3A;&#x5185;&#x529F;&#x4E4B;&#x62DB;&#x5F0F;&#x4E09;  &#x9879;&#x76EE;&#x4E2D;&#x6B63;&#x786E;&#x4F7F;&#x7528;model&#x7684;&#x59FF;&#x52BF;</strong></p>
+<p>&#x5728;&#x4E00;&#x4E2A;&#x9879;&#x76EE;&#x4E2D;&#xFF0C;&#x6570;&#x636E;&#x64CD;&#x4F5C;&#x53EF;&#x89C6;&#x4E3A;&#x6700;&#x5E95;&#x5C42;&#x64CD;&#x4F5C;&#x3002;&#x6570;&#x636E;&#x53C8;&#x5177;&#x6709;&#x79C1;&#x5BC6;&#x6027;&#xFF0C;&#x9AD8;&#x5EA6;&#x51C6;&#x786E;&#x6027;&#xFF0C;&#x6709;&#x89C4;&#x5219;&#x6027;&#x7B49;&#x7279;&#x70B9;&#xFF0C;&#x8FD9;&#x4E2A;&#x73AF;&#x8282;&#x53EF;&#x5C24;&#x4E3A;&#x91CD;&#x8981;&#x3002;</p>
+<p>&#x6570;&#x636E;&#x64CD;&#x4F5C;&#x672C;&#x662F;&#x7531;&#x4E1A;&#x52A1;&#x51B3;&#x5B9A;&#x7684;&#xFF0C;&#x5047;&#x8BBE;&#x6211;&#x4EEC;&#x4E1A;&#x52A1;&#x64CD;&#x4F5C;&#x5728;<code>Server</code>&#x5C42;&#xFF0C;&#x5165;&#x53E3;&#x5728;<code>Controller</code>&#x5C42;&#xFF0C;&#x6570;&#x636E;&#x64CD;&#x4F5C;&#x5728;Model&#x5C42;&#xFF0C;&#x4E0E;<code>Model</code>&#x53CA;<code>Server</code>&#x5C42;&#x4EA4;&#x4E92;&#x5728;<code>Repositories</code>&#x5C42;&#x3002;&#x8FD9;&#x6837;&#x770B;&#x4F3C;&#x590D;&#x6742;&#xFF0C;&#x5176;&#x5B9E;&#x66F4;&#x7B80;&#x5355;&#xFF0C;&#x8FD9;&#x7B26;&#x5408;&#x73B0;&#x4EE3;&#x5316;&#x4E0D;&#x540C;&#x5DE5;&#x79CD;&#x7684;&#x7684;&#x534F;&#x4F5C;&#xFF0C;&#x5982;&#x4E00;&#x4E2A;&#x4E92;&#x8054;&#x7F51;&#x4EA7;&#x54C1;&#x53D1;&#x5E03;&#x6240;&#x9700;&#x8981;&#x7684;&#x5DE5;&#x79CD;&#xFF0C;&#x4EE5;&#x53CA;&#x9020;&#x6C7D;&#x8F66;&#x6D41;&#x6C34;&#x7EBF;&#x3002;
+&#x8FD9;&#x6837;&#x4F7F;&#x5F97;&#x5404;&#x5C42;&#x9AD8;&#x5EA6;&#x89E3;&#x8026;&#xFF0C;&#x4E14;&#x5177;&#x9AD8;&#x66FF;&#x4EE3;&#x6027;&#x3002;&#x5C31;&#x50CF;&#x662F;&#x6211;&#x4EEC;&#x4E0D;&#x4F1A;&#x56E0;&#x4E3A;&#x4E00;&#x4F4D;&#x524D;&#x7AEF;&#x5F00;&#x53D1;&#x7684;&#x79BB;&#x804C;&#x800C;&#x627E;&#x4E0D;&#x5230;&#x7B2C;&#x4E8C;&#x4F4D;&#x53EF;&#x66FF;&#x4EE3;&#x4EBA;&#x9009;&#x3002;</p>
+<p>&#x90A3;&#x4E48;&#xFF0C;&#x6B64;&#x65F6;<code>Model</code>&#x7684;&#x4EFB;&#x52A1;&#x5C31;&#x53D8;&#x7684;&#x5C24;&#x4E3A;&#x7B80;&#x5355;&#x3002;Model&#x4E2D;&#x53EA;&#x9700;&#x5199;&#x5B57;&#x6BB5;&#x6784;&#x9020;&#xFF0C;&#x6A21;&#x578B;&#x5173;&#x8054;&#x3002;&#x6216;&#x662F;&#x4F5C;&#x7528;&#x57DF;&#xFF0C;&#x4EE5;&#x53CA;&#x9897;&#x7C92;&#x5EA6;&#x6781;&#x5C0F;&#x7684;&#x7B5B;&#x9009;&#x67E5;&#x8BE2;&#x7B49;&#x7B49;&#x3002;&#x800C;&#x4E0D;&#x5E94;&#x8BE5;&#x5728;&#x6B64;&#x505A;&#x5927;&#x91CF;&#x7684;&#x67E5;&#x8BE2;&#x4F9B;&#x5176;&#x4ED6;&#x5C42;&#x8C03;&#x7528;&#x3002;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="ROUTE.html" class="navigation navigation-prev " aria-label="Previous page: 路由注册">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="API_AUTOMATION.html" class="navigation navigation-next " aria-label="Next page: API文档编写">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"数据库操作","level":"1.2.8","depth":2,"next":{"title":"API文档编写","level":"1.2.9","depth":2,"path":"API_AUTOMATION.md","ref":"API_AUTOMATION.md","articles":[]},"previous":{"title":"路由注册","level":"1.2.7","depth":2,"path":"ROUTE.md","ref":"ROUTE.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"DATABASE.md","mtime":"2018-06-25T07:10:04.587Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-06-25T03:29:44.402Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
