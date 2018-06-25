@@ -15,10 +15,13 @@ npm install -g gitbook-cli
 
 2.运行
 
-切换到文档目录，启动gitbook服务
-
+启动gitbook服务
 ```
 gitbook serve
+```
+编译成静态文件
+```
+gitbook build
 ```
 
 ### 编写规范
